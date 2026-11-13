@@ -15,21 +15,32 @@
 # numeros = [10, 20, 30, 40, 50]
 # Calcula la mitjana dels números fent servir un bucle for.
 
-i = 0
-sumatori = 0
-numeros = [10, 20, 30, 40, 50]
+# i = 0
+# sumatori = 0
+# numeros = [10, 20, 30, 40, 50]
 
-for num in numeros:
-    sumatori += numeros[i]
-    i += 1
+# for num in numeros:
+#     sumatori += numeros[i]
+#     i += 1
 
-mitjana = sumatori / i
-print(mitjana) 
+# mitjana = sumatori / i
+# print(mitjana) 
 
 # Exercici 3: Buscar el màxim d'una llista
 # Donada la llista de números següent:
 # numeros = [15, 5, 25, 10, 20]
 # Troba el número màxim de la llista fent servir un bucle for.
+
+
+# num = 0
+# i = 0
+# numeros = [15, 5, 25, 10, 20]
+# for num in numeros:
+#     if num < numeros[i]:
+#         num = numeros
+#     i += 1
+# print (num)
+
 
 # Exercici 4: Filtrar cadenes per longitud
 # Donada la llista de paraules següent:
@@ -37,16 +48,42 @@ print(mitjana)
 # Crea una llista nova que contingui només les paraules amb més de 5 lletres
 # fent servir un bucle for i list comprehension.
 
+
+# paraules = ["casa", "arbre", "sol", "elefant", "lluna"]
+# paraules_llargues = [paraula for paraula in paraules if len(paraula) > 5]
+# # Aquesta iteració recorre cada paraula de la llista "paraules" i comprova si la seva longitud és superior a 5. 
+# # Si és així, afegeix la paraula a la nova llista "paraules_llargues". Finalment, imprimeix la llista resultant.
+# print(paraules_llargues)
+
+
 # Exercici 5: Comptar paraules que comencen per una lletra
 # Donada la llista de paraules següent:
 # paraules = ["casa", "arbre", "sol", "elefant", "lluna", "cotxe"]
 # Demana a l'usuari que introdueixi una lletra.
 # Compta quantes paraules de la llista comencen per aquesta lletra (sense diferenciar majúscules/minúscules).
 
+# paraules = ["casa", "arbre", "sol", "elefant", "lluna", "cotxe"]
+# nova_llista = []
+# lletra = input("Introdueix una lletra ")
+# i = 0
+# for paraula in paraules:
+#     if paraula[0] == lletra:
+#         nova_llista.insert(i, paraula)
+#     i += 1 
+# print (nova_llista)
+
 # Exercici 6: Mesures de tensió d'un sensor
 # Durant una prova s'han registrat les tensions següents (en volts):
 # tensions = [4.8, 5.0, 5.1, 4.9, 5.2]
 # Fent servir un bucle for, calcula la tensió mitjana i imprimeix-la.
+
+# tensions = [4.8, 5.0, 5.1, 4.9, 5.2]
+# num = 0
+# i = 0
+# for valors in tensions:
+#     num += valors
+#     i += 1
+# print (num/i)    
 
 # Exercici 7: Corrent en resistències
 # En un circuit s'aplica una tensió de 12 V a aquestes resistències:
@@ -54,11 +91,17 @@ print(mitjana)
 # Fent servir la llei d'Ohm (I = V / R) i un bucle for, calcula i imprimeix
 # el corrent que circula per cada resistència, en ampers.
 
+# resistencies = [100, 220, 470, 1000]
+# for res in resistencies:
+#     print(12/res)
+
 # Exercici 8: Mostres que superen el llindar de soroll
 # Un receptor ha mesurat aquests nivells de soroll (en dBm):
 # nivells_soroll = [-92, -85, -78, -95, -81, -88]
 # Compta, amb un bucle for, quantes mostres superen el llindar de -80 dBm
 # (és a dir, tenen un valor més gran que -80) i imprimeix el resultat.
+
+
 
 # Exercici 9: Càlcul de la taxa d'error de bits
 # Compara els bits transmesos i rebuts:
