@@ -104,3 +104,13 @@ print(f"Valor max: {maxim}, Valor min: {minim}")
 # Exercici 9: Palíndrom
 # Crea una funció es_palindrom(text) que retorni True si una paraula es llegeix igual d'esquerra a dreta
 # que de dreta a esquerra (ignorant majúscules i minúscules), i False en cas contrari.
+
+def es_palindrom(text):
+    confirmacio=text[::-1].lower() 
+    if confirmacio == text:
+        return True
+    else:
+        return False
+
+es_palindrom("hola")
+es_palindrom("abbbba")
